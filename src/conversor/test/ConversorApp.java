@@ -20,8 +20,8 @@ public class ConversorApp {
 			"Won Coreano(KRW) → Peso Argentino(ARS)", "Won Coreano(KRW) → Dólar(USD)", "Won Coreano(KRW) → Euro(€)",
 			"Won Coreano(KRW) → Libras(£)" };
 
-	private static String[] temperatures = { "Centígrados → Fahrenheit", "Centígrados → Celsius",
-			"Fahrenheit → Centígrados", "Fahrenheit → Celsius", "Celsius → Centígrados", "Celsius → Fahrenheit" };
+	private static String[] temperatures = { "Centígrados → Fahrenheit", "Centígrados → Kelvin",
+			"Fahrenheit → Centígrados", "Fahrenheit → Kelvin", "Kelvin → Centígrados", "Kelvin → Fahrenheit" };
 
 	private static String[] measure = { "Metros → Kilómetros", "Metros → Centímetros", "Metros → Milímetros",
 			"Kilómetros → Metros", "Kilómetros → Centímetros", "Kilómetros → Milímetros",
@@ -66,8 +66,8 @@ public class ConversorApp {
 							if (Conversor.validarInput(amountInput)) {
 								amount = Double.parseDouble(amountInput);
 								JOptionPane.showMessageDialog(null,
-										"El resultado de su conversión es: "
-												+ Conversor.conversion(amount, conversionUnities),
+										"El resultado de su conversión es: \n"
+												+ Conversor.conversion(amount, "Coins", conversionUnities),
 										conversionUnities, JOptionPane.DEFAULT_OPTION);
 								break;
 							} else {
@@ -114,8 +114,8 @@ public class ConversorApp {
 							if (Conversor.validarInput(amountInput)) {
 								amount = Double.parseDouble(amountInput);
 								JOptionPane.showMessageDialog(null,
-										"El resultado de su conversión es: "
-												+ Conversor.conversion(amount, conversionUnities),
+										"El resultado de su conversión es: \n"
+												+ Conversor.conversion(amount, "Temperature", conversionUnities),
 										conversionUnities, JOptionPane.DEFAULT_OPTION);
 								break;
 							} else {
@@ -162,8 +162,8 @@ public class ConversorApp {
 							if (Conversor.validarInput(amountInput)) {
 								amount = Double.parseDouble(amountInput);
 								JOptionPane.showMessageDialog(null,
-										"El resultado de su conversión es: "
-												+ Conversor.conversion(amount, conversionUnities),
+										"El resultado de su conversión es: \n"
+												+ Conversor.conversion(amount, "Distance", conversionUnities),
 										conversionUnities, JOptionPane.DEFAULT_OPTION);
 								break;
 							} else {
@@ -210,8 +210,8 @@ public class ConversorApp {
 							if (Conversor.validarInput(amountInput)) {
 								amount = Double.parseDouble(amountInput);
 								JOptionPane.showMessageDialog(null,
-										"El resultado de su conversión es: "
-												+ Conversor.conversion(amount, conversionUnities),
+										"El resultado de su conversión es:\n"
+												+ Conversor.conversion(amount, "Weight", conversionUnities),
 										conversionUnities, JOptionPane.DEFAULT_OPTION);
 								break;
 							} else {

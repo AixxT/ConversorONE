@@ -5,7 +5,7 @@ import java.awt.Cursor;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JOptionPane;
+
 
 public class MyButton extends JButton {
 	
