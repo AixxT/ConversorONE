@@ -1,17 +1,20 @@
 package conversor.modelo;
 
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.GridLayout;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class WelcomePanel extends JPanel {
+public class WelcomePanel extends JPanel{
+	
+	private static JButton coinButton;
+	private static JButton temperatureButton;
+	private static JButton measureButton;
+	private static JButton weightButton;
 	
 	public WelcomePanel() {
 		
@@ -39,10 +42,10 @@ public class WelcomePanel extends JPanel {
 		msg.add(welcomeMsg1);
 		msg.add(welcomeMsg2);
 		
-		JButton coinButton = new MyButton(coin);
-		JButton temperatureButton = new MyButton(temperature);
-		JButton measureButton = new MyButton(measure);
-		JButton weightButton = new MyButton(weight);
+		coinButton = new MyButton(coin);
+		temperatureButton = new MyButton(temperature);
+		measureButton = new MyButton(measure);
+		weightButton = new MyButton(weight);
 		
 		
 		buttons.add(coinButton);
@@ -52,4 +55,21 @@ public class WelcomePanel extends JPanel {
 		this.add(msg);
 		this.add(buttons);
 	}
+
+	public JButton getCoinButton() {
+		return coinButton;
+	}
+
+	public JButton getTemperatureButton() {
+		return temperatureButton;
+	}
+
+	public JButton getMeasureButton() {
+		return measureButton;
+	}
+
+	public JButton getWeightButton() {
+		return weightButton;
+	}
+
 }

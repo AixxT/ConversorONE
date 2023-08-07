@@ -5,6 +5,7 @@ import java.awt.Cursor;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 public class MyButton extends JButton {
 	
@@ -14,7 +15,7 @@ public class MyButton extends JButton {
 		this.setBorder(BorderFactory.createEmptyBorder());
 		this.setContentAreaFilled(false);
 		this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		
-		
+			
 	}
+	
 }

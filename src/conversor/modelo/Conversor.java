@@ -1,26 +1,14 @@
 package conversor.modelo;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Cursor;
-import java.awt.Desktop;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Conversor extends JFrame {
+
+	private static WelcomePanel welcome;
 
 	public static void generateGui() {
 
@@ -35,8 +23,8 @@ public class Conversor extends JFrame {
 
 		JPanel header = new Header();
 		JPanel footer = new Footer();
-		JPanel welcome = new WelcomePanel();
-		
+		welcome = new WelcomePanel();
+
 		mainPanel.add(welcome);
 		mainPanel.add(header, BorderLayout.NORTH);
 		mainPanel.add(footer, BorderLayout.SOUTH);
@@ -44,4 +32,25 @@ public class Conversor extends JFrame {
 		mainPanel.setVisible(true);
 	}
 
+	public static WelcomePanel getWelcome() {
+		return welcome;
+	}
+
+	public static String conversion(double amount, String unidades) {
+
+		return null;
+	}
+
+	public static boolean validarInput(String input) {
+		try {
+			double x = Double.parseDouble(input);
+			if (x > 0) {
+				return true;
+			} else {
+				return false;
+			}
+		} catch (NumberFormatException e) {
+			return false;
+		}
+	}
 }
