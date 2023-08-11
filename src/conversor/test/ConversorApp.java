@@ -32,8 +32,14 @@ public class ConversorApp {
 			"Gramos → Kilogramos", "Gramos → Miligramos", "Miligramos → Kilogramos", "Miligramos → Gramos"};
 	
 
-	private static ImageIcon coin = new ImageIcon(
+	private static ImageIcon coinIcon = new ImageIcon(
 			"C:/Users/aixxt/eclipse-workspace/ChallengeConversor/Resources/coin.png");
+	private static ImageIcon temperatureIcon = new ImageIcon(
+			"C:/Users/aixxt/eclipse-workspace/ChallengeConversor/Resources/temperature.png");
+	private static ImageIcon measureIcon = new ImageIcon(
+			"C:/Users/aixxt/eclipse-workspace/ChallengeConversor/Resources/measure.png");
+	private static ImageIcon weightIcon = new ImageIcon(
+			"C:/Users/aixxt/eclipse-workspace/ChallengeConversor/Resources/weight.png");
 
 	public static void main(String[] args) {
 
@@ -49,7 +55,7 @@ public class ConversorApp {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conversionUnities = (String) JOptionPane.showInputDialog(null, "Elija la dupla correspondiente:",
-							"Divisas", JOptionPane.PLAIN_MESSAGE, coin, coins, Array.get(coins, 0));
+							"Divisas", JOptionPane.PLAIN_MESSAGE, coinIcon, coins, Array.get(coins, 0));
 
 				} catch (NullPointerException npe) {
 					conversionUnities = null;
@@ -97,7 +103,7 @@ public class ConversorApp {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conversionUnities = (String) JOptionPane.showInputDialog(null, "Elija la dupla correspondiente:",
-							"Temperatura", JOptionPane.PLAIN_MESSAGE, null, temperatures, Array.get(temperatures, 0));
+							"Temperatura", JOptionPane.PLAIN_MESSAGE, temperatureIcon, temperatures, Array.get(temperatures, 0));
 
 				} catch (NullPointerException npe) {
 					conversionUnities = null;
@@ -145,7 +151,7 @@ public class ConversorApp {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conversionUnities = (String) JOptionPane.showInputDialog(null, "Elija la dupla correspondiente:",
-							"Distancia", JOptionPane.PLAIN_MESSAGE, null, measure, Array.get(measure, 0));
+							"Distancia", JOptionPane.PLAIN_MESSAGE, measureIcon, measure, Array.get(measure, 0));
 
 				} catch (NullPointerException npe) {
 					conversionUnities = null;
@@ -193,7 +199,7 @@ public class ConversorApp {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conversionUnities = (String) JOptionPane.showInputDialog(null, "Elija la dupla correspondiente:",
-							"Peso", JOptionPane.PLAIN_MESSAGE, null, weight, Array.get(weight, 0));
+							"Peso", JOptionPane.PLAIN_MESSAGE, weightIcon, weight, Array.get(weight, 0));
 
 				} catch (NullPointerException npe) {
 					conversionUnities = null;

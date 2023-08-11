@@ -197,7 +197,7 @@ public class Conversor extends JFrame {
 				return amount * conversionValue;
 			}
 			case "Centímetros → Metros" : {
-				double conversionValue = 0.001;
+				double conversionValue = 0.01;
 				return amount * conversionValue;
 			}
 			case "Centímetros → Milímetros" : {
