@@ -1,7 +1,7 @@
 <p align = center> 
  <img src = "https://github.com/AixxT/ConversorONE/assets/118408710/894442c9-aa1c-4a96-9a64-ae6c0d5886f1" >
 
-<h1 align = center> <b>Challenge conversor del curso ONE, Alura Latam y Oracle.</b> </h1>
+<h1 align = center> <b>Challenge conversor de la formación ONE, Alura Latam y Oracle.</b> </h1>
 <p align = center> <b>Java | Back End | Conversor moneda y temperatura</b> </p>
 
 <p align = center>
